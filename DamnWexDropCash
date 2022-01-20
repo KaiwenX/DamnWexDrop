@@ -1,0 +1,393 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Frame_2 = Instance.new("Frame")
+local Frame_3 = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local _10K = Instance.new("TextButton")
+local _5K = Instance.new("TextButton")
+local _2500 = Instance.new("TextButton")
+local _1k = Instance.new("TextButton")
+local _1k_2 = Instance.new("TextButton")
+local WARNING = Instance.new("TextLabel")
+local Oncestarteditcannotbestopped = Instance.new("TextLabel")
+local Oncestarteditcannotbestopped_2 = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local CloseButton = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local MinimizeButton = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+Frame.BorderColor3 = Color3.fromRGB(12, 12, 12)
+Frame.Position = UDim2.new(0.406705528, 0, 0.307602346, 0)
+Frame.Size = UDim2.new(0, 255, 0, 27)
+
+UICorner.Parent = Frame
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+Frame_2.BorderColor3 = Color3.fromRGB(12, 12, 12)
+Frame_2.Position = UDim2.new(-0.00113764743, 0, 0.482684582, 0)
+Frame_2.Size = UDim2.new(0, 255, 0, 326)
+
+Frame_3.Parent = Frame_2
+Frame_3.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Frame_3.BorderColor3 = Color3.fromRGB(27, 27, 27)
+Frame_3.Position = UDim2.new(0.0274509806, 0, 0.0428451821, 0)
+Frame_3.Size = UDim2.new(0, 241, 0, 304)
+
+UICorner_2.Parent = Frame_3
+
+_10K.Name = "10K"
+_10K.Parent = Frame_3
+_10K.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+_10K.BorderColor3 = Color3.fromRGB(20, 20, 20)
+_10K.Position = UDim2.new(0.0414937772, 0, 0.0296052638, 0)
+_10K.Size = UDim2.new(0, 90, 0, 31)
+_10K.Font = Enum.Font.FredokaOne
+_10K.Text = "10K Drop"
+_10K.TextColor3 = Color3.fromRGB(212, 212, 212)
+_10K.TextSize = 20.000
+_10K.MouseButton1Down:connect(function()
+while true do
+
+		local args = {
+			[1] = "DropMoney",
+			[2] = "100"
+		}
+
+		game:GetService("ReplicatedStorage").MainEvent:FireServer(unpack(args))
+
+		wait()
+	end
+end)
+
+_5K.Name = "5K"
+_5K.Parent = Frame_3
+_5K.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+_5K.BorderColor3 = Color3.fromRGB(20, 20, 20)
+_5K.Position = UDim2.new(0.568464756, 0, 0.0296052638, 0)
+_5K.Size = UDim2.new(0, 90, 0, 31)
+_5K.Font = Enum.Font.FredokaOne
+_5K.Text = "5K"
+_5K.TextColor3 = Color3.fromRGB(212, 212, 212)
+_5K.TextSize = 20.000
+_5K.MouseButton1Down:connect(function()
+while true do
+
+		local args = {
+			[1] = "DropMoney",
+			[2] = "5000"
+		}
+
+		game:GetService("ReplicatedStorage").MainEvent:FireServer(unpack(args))
+
+		wait()
+	end
+end)
+
+_2500.Name = "2500"
+_2500.Parent = Frame_3
+_2500.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+_2500.BorderColor3 = Color3.fromRGB(20, 20, 20)
+_2500.Position = UDim2.new(0.0414937735, 0, 0.20394738, 0)
+_2500.Size = UDim2.new(0, 90, 0, 31)
+_2500.Font = Enum.Font.FredokaOne
+_2500.Text = "2.5K"
+_2500.TextColor3 = Color3.fromRGB(212, 212, 212)
+_2500.TextSize = 20.000
+_2500.MouseButton1Down:connect(function()
+while true do
+
+		local args = {
+			[1] = "DropMoney",
+			[2] = "2500"
+		}
+
+		game:GetService("ReplicatedStorage").MainEvent:FireServer(unpack(args))
+
+		wait()
+	end
+end)
+
+_1k.Name = "1k"
+_1k.Parent = Frame_3
+_1k.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+_1k.BorderColor3 = Color3.fromRGB(20, 20, 20)
+_1k.Position = UDim2.new(0.568464756, 0, 0.20394738, 0)
+_1k.Size = UDim2.new(0, 90, 0, 31)
+_1k.Font = Enum.Font.FredokaOne
+_1k.Text = "1K"
+_1k.TextColor3 = Color3.fromRGB(212, 212, 212)
+_1k.TextSize = 20.000
+_1k.MouseButton1Down:connect(function()
+while true do
+
+		local args = {
+			[1] = "DropMoney",
+			[2] = "1000"
+		}
+
+		game:GetService("ReplicatedStorage").MainEvent:FireServer(unpack(args))
+
+		wait()
+	end
+end)
+
+_1k_2.Name = "1k"
+_1k_2.Parent = Frame_3
+_1k_2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+_1k_2.BorderColor3 = Color3.fromRGB(20, 20, 20)
+_1k_2.Position = UDim2.new(0.311203331, 0, 0.375, 0)
+_1k_2.Size = UDim2.new(0, 90, 0, 31)
+_1k_2.Font = Enum.Font.FredokaOne
+_1k_2.Text = "100"
+_1k_2.TextColor3 = Color3.fromRGB(212, 212, 212)
+_1k_2.TextSize = 20.000
+_1k_2.MouseButton1Down:connect(function()
+while true do
+
+		local args = {
+			[1] = "DropMoney",
+			[2] = "100"
+		}
+
+		game:GetService("ReplicatedStorage").MainEvent:FireServer(unpack(args))
+
+		wait()
+	end
+end)
+
+WARNING.Name = "WARNING"
+WARNING.Parent = Frame_3
+WARNING.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+WARNING.BorderColor3 = Color3.fromRGB(27, 27, 27)
+WARNING.Position = UDim2.new(0.0414937772, 0, 0.503289461, 0)
+WARNING.Size = UDim2.new(0, 217, 0, 38)
+WARNING.Font = Enum.Font.SourceSans
+WARNING.Text = "WARNING"
+WARNING.TextColor3 = Color3.fromRGB(191, 0, 0)
+WARNING.TextSize = 30.000
+
+Oncestarteditcannotbestopped.Name = "Once started, it cannot be stopped."
+Oncestarteditcannotbestopped.Parent = Frame_3
+Oncestarteditcannotbestopped.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Oncestarteditcannotbestopped.BorderColor3 = Color3.fromRGB(27, 27, 27)
+Oncestarteditcannotbestopped.Position = UDim2.new(0.0414937772, 0, 0.628289461, 0)
+Oncestarteditcannotbestopped.Size = UDim2.new(0, 217, 0, 67)
+Oncestarteditcannotbestopped.Font = Enum.Font.SourceSans
+Oncestarteditcannotbestopped.Text = "Once started, it cannot be stopped."
+Oncestarteditcannotbestopped.TextColor3 = Color3.fromRGB(212, 212, 212)
+Oncestarteditcannotbestopped.TextSize = 30.000
+Oncestarteditcannotbestopped.TextWrapped = true
+
+Oncestarteditcannotbestopped_2.Name = "Once started, it cannot be stopped."
+Oncestarteditcannotbestopped_2.Parent = Frame_3
+Oncestarteditcannotbestopped_2.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Oncestarteditcannotbestopped_2.BorderColor3 = Color3.fromRGB(27, 27, 27)
+Oncestarteditcannotbestopped_2.Position = UDim2.new(0.0497925319, 0, 0.868421078, 0)
+Oncestarteditcannotbestopped_2.Size = UDim2.new(0, 217, 0, 31)
+Oncestarteditcannotbestopped_2.Font = Enum.Font.SourceSans
+Oncestarteditcannotbestopped_2.Text = "\":rejoin\" to close"
+Oncestarteditcannotbestopped_2.TextColor3 = Color3.fromRGB(212, 212, 212)
+Oncestarteditcannotbestopped_2.TextSize = 30.000
+Oncestarteditcannotbestopped_2.TextWrapped = true
+
+UICorner_3.Parent = Frame_2
+
+CloseButton.Name = "CloseButton"
+CloseButton.Parent = Frame
+CloseButton.BackgroundColor3 = Color3.fromRGB(204, 0, 0)
+CloseButton.BorderColor3 = Color3.fromRGB(204, 0, 0)
+CloseButton.Position = UDim2.new(0.886274517, 0, 0.111111164, 0)
+CloseButton.Size = UDim2.new(0, 21, 0, 21)
+CloseButton.Font = Enum.Font.SourceSans
+CloseButton.Text = "X"
+CloseButton.TextColor3 = Color3.fromRGB(204, 0, 0)
+CloseButton.TextSize = 30.000
+
+UICorner_4.Parent = CloseButton
+
+MinimizeButton.Name = "MinimizeButton"
+MinimizeButton.Parent = Frame
+MinimizeButton.BackgroundColor3 = Color3.fromRGB(225, 225, 53)
+MinimizeButton.BorderColor3 = Color3.fromRGB(225, 225, 53)
+MinimizeButton.Position = UDim2.new(0.78039217, 0, 0.111111164, 0)
+MinimizeButton.Size = UDim2.new(0, 21, 0, 21)
+MinimizeButton.Font = Enum.Font.SourceSans
+MinimizeButton.Text = "-"
+MinimizeButton.TextColor3 = Color3.fromRGB(225, 225, 53)
+MinimizeButton.TextSize = 30.000
+
+UICorner_5.Parent = MinimizeButton
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+TextLabel.Size = UDim2.new(0, 183, 0, 27)
+TextLabel.Font = Enum.Font.FredokaOne
+TextLabel.Text = "DamnWex - Drop"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 25.000
+
+UICorner_6.Parent = TextLabel
+
+-- Scripts:
+
+local function EGDTK_fake_script() -- ScreenGui.Notifacion Script 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local function callback(Text)
+		if Text == "Button1 text" then
+			print ("Answer")
+		elseif Text == ("Button2 text") then
+			print ("Answer2")
+		end
+	end
+	
+	local NotificationBindable = Instance.new("BindableFunction")
+	NotificationBindable.OnInvoke = callback
+	--
+	game.StarterGui:SetCore("SendNotification",  {
+		Title = "Sub To DamnWex";
+		Text = "Thanks For Using DamnWex Drop";
+		Icon = "";
+		Duration = 20;
+		Callback = NotificationBindable;
+	})
+end
+coroutine.wrap(EGDTK_fake_script)()
+local function MDSPT_fake_script() -- CloseButton.Script 
+	local script = Instance.new('Script', CloseButton)
+
+	local function OnClicked()
+	   script.Parent.Parent:Remove()
+	end
+	
+	script.Parent.MouseButton1Click:connect(OnClicked)
+end
+coroutine.wrap(MDSPT_fake_script)()
+local function JZZSEK_fake_script() -- MinimizeButton.LocalScript 
+	local script = Instance.new('LocalScript', MinimizeButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Frame.Visible = not script.Parent.Parent.Frame.Visible
+	end)
+	
+end
+coroutine.wrap(JZZSEK_fake_script)()
+local function LNYZA_fake_script() -- Frame.Draggable For Frame 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.15
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(LNYZA_fake_script)()
+local function SYEJMRK_fake_script() -- TextLabel.Rainbower 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	while wait() do
+		script.Parent.TextColor3 = Color3.new(1,0,0)
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g+(17/255),script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r-(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b+(17/255))
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g-(17/255),script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r+(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b-(17/255))
+		end
+	end
+end
+coroutine.wrap(SYEJMRK_fake_script)()
+local function YTHO_fake_script() -- ScreenGui.Put in StarterPlayer (StarterPlayerScripts) 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	UserInputService = game:GetService("UserInputService")
+	
+	
+	UserInputService.InputBegan:Connect(function(input,gameProcessedEvent)
+		if input.KeyCode == Enum.KeyCode.M then
+			game.Players.LocalPlayer.Character.Humanoid.Health = 0
+			print("User resetted")
+		end
+	end)
+	
+end
+coroutine.wrap(YTHO_fake_script)()
+local function UKJLRN_fake_script() -- ScreenGui.Rejoin 
+	local script = Instance.new('Script', ScreenGui)
+
+	local Plr = game.Players.LocalPlayer
+	local Prefix = ":"
+	local RejoinMsg = "Rejoin"
+	local TP = game:GetService("TeleportService")
+	
+	Plr.Chatted:Connect(function(MSG)
+		if MSG == Prefix..RejoinMsg then
+			TP:Teleport(game.PlaceId, Plr)
+		end
+	end)
+end
+coroutine.wrap(UKJLRN_fake_script)()
